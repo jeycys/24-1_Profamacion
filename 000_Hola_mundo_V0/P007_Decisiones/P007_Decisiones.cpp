@@ -13,7 +13,7 @@ int main()
         int EL = 2 ;
         int grupos = 3  ;
         int tdp;
-
+        int opc = 3;
 
 
 
@@ -47,19 +47,29 @@ int main()
         if (tdp == 2)
         {
             std::cout << "usted eligio el modo eliminatoria\n";
-            std::cout << "Es el modo de combate que todos conocemos, un 1 contra 1, 2 contra 2. Con el numero de " << np << "peleadores\n";
+            std::cout << "Es el modo de combate que todos conocemos, un 1 contra 1, 2 contra 2. Con el numero de " << np << " peleadores\n";
             std::cout << "Tendra lugar un solo combate de maximo 3 horas\n";
             std::cout << "El ganador se decidira cuando algun contrincante se rinda";
         }
 
         if (tdp == 3)
         {
+          
             std::cout << "Usted eligio el modo de fase de grupos\n ";
             std::cout << "El numero de peleadores es " << np;
             if (np == 10)
             {
-                std::cout << "Sera un"
+                std::cout << " Seran 4 combates para poder coronar a un equipo ganador, habran equipos de 2";
             }
+            if (tdp == 20)
+            {
+                 std::cout << " seran 9 combates para poder elegir un ganador";
+            }
+            if (tdp == 30)
+            {
+                 std::cout << " Sera un total de 26 combates para poder coronar a un ganador";
+            }
+            
         }
 
 
