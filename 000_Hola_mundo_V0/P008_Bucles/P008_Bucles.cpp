@@ -1,11 +1,5 @@
-// P008_Bucles.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
 
-// P006_EControl_V0.cpp : 
-// Mauricio Cabrera
-// Sintaxys de las estructuras de control
-// Decisiones Simples -
-// Bucles - Repetición - todo el tiempo - Alguna vez - siempre y cuando yo quiera.
+
 
 #include <iostream>
 #include <locale>
@@ -14,66 +8,71 @@
 int main()
 {
     setlocale(LC_ALL, "es_MX.UTF-8");
-    int mayor_edad = 7;
-    //Sintaxys de IF-ELSE
-    if (mayor_edad >= 18)
+
+    bool d1, d2;
+    std::string opc1 = "te quedaste en casa (huevas)", opc2 = "Fuiste a clases";
+    std::cout << "Tienes clase a las 7:30 de la mañana\n";
+    std::cout << "¿Vas a asistir? \n";
+    std::cout << "1 - si\n";
+    std::cout << "0 - no\n";
+    std::cin >> d1;
+    if (d1 == true)
     {
-        std::cout << "Bienvenido al bar de mou \n"
-            << "como eres mayor puedes beber cerveza \n";
-    }
-    else
-    {
-        std::cout << "Sal de aquí pequeñín\n";
-    }
-    //dungeon
-    bool llave1, llave2;
-    std::string Cal1 = "Calabozo 1", Cal2 = "Calabozo 2";
-    std::cout << "Bienvenido caballero te encontraste con una araña" <<
-        " Que haces? 1.- Atacas 0.- Huyes\n";
-    std::cin >> llave1;
-    if (llave1 == true)
-    {
-        std::cout << "Que valiente eres acabas de ingresar al " << Cal1 <<
-            " Te encontraste con un troll que deseas hacer? \n" <<
-            "1.- Atacas 0.- Huyes \n";
-        std::cin >> llave2;
-        if (llave2 == true)
+        std::cout << "Muy biemn, eres un chico/a muy responsable\n";
+        std::cout << "Ya estas en la escuela, pero....\n";
+        std::cout << "¿Asistiras a clases o te iras de vago con tus amigos?\n";
+        std::cout << "1 - si\n";
+        std::cout << "0 - no\n";
+        std::cin >> d2;
+        if (d2 == true)
         {
-            std::cout << "Derrotaste al troll y encontraste una princesa" <<
-                " Como eres un caballero la llevas a su reyno donde " <<
-                "Te apalean porque piensan que tu la secuestraste XD\n";
+            std::cout << "Preeferiste la diversion antes que el estudio (yo haria lo mismo)";
         }
         else
         {
-            std::cout << "Culito pero sanito\n";
+            std::cout << "Muy buien, eres muy responsable pero te aburriste mucho y te dormiste";
+        
         }
+
+
+
     }
     else
-    {
-        std::cout << "Ni una araña neta? \n";
+        std::cout << opc1;
     }
         //Sintaxys de SWITCH CASE
     int opc = 0;
-    std::cout << "Que opción deseas realizar? \n1.- Suma\n2.- Resta\n"<<
-        "3.- Multiplicación \n";
+    std::cout << "Tinenes tarea de mate, español e ingles que tarea deseas realizar primero? \n1.- mate\n2.- ingles\n"<<
+        "3.- español \n";
     std::cin >> opc;
     int a = 1, b = 1;
     switch (opc)
     {
 
     case 1:
-        std::cout << "La suma es: " << a + b;
+        int res = 0;
+        std::cout << "La primera pregunta de la tarea es\n ¿Cuanto es 5 X 2?\n";
+        std::cin >> res;
+        if (res == 10)
+        {
+            std::cout << "Muy buen, respondiste una pregunta de primaria";
+
+        }
+        else
+        {
+            std::cout << "tas bn wuey";
+        }
+    
+
         break;
     case 2:
-        a = 1;
-        b = 1;
-        std::cout << "La resta es: " << a - b;
-        break;
+        
+        std::cout << "Muy facil, no nescitas tanto trabajo";
     case 3:
-        std::cout << "La multiplicación es: " << a * b;
+        std::cout << "esta muy facil ";
         break;
     default:
-        std::cout << "Esa opción no la conozco\n";
+        std::cout << "No hay tarea de esto nmms\n";
     }
 
     //Estructuras de Bucle
