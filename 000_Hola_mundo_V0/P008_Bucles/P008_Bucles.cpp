@@ -81,7 +81,7 @@ int main()
     bool seguir = false;
     while (seguir)
     {
-        std::cout << "Perdiste una vida... Deseas continuar?. . .\n0.-No\n1.-Si\n";
+        std::cout << "Perdiste un examen... Deseas asistir a la siguiente clase?. . .\n0.-No\n1.-Si\n";
         std::cin >> seguir;
     }
     //El que se ejecutara si o si 1 vez - Do While
@@ -95,7 +95,7 @@ int main()
     //i=i+1 o i++
     for (int i = 0; i <= 100; i=i+1)
     {
-        std::cout << "El contador va en: " << i;
+        std::cout << "como nunca te saltas clases tu intelecto sube de 1 a: " << i;
         std::cout << std::endl;
     }
 
