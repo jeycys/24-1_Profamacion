@@ -34,38 +34,28 @@ int main()
 
         if (usu == usu2)
         {
-            std::cout << "Tu usuario es correcto";
+            std::cout << "Tu usuario es correcto\n";
 
         }
         else
         {
-            std::cout << "Tu usario es incorrecto, intentelo más tarde \n";
+            std::cout << "Tu usario es incorrecto,  \n";
         }
 
 
         if (contra == contra2)
         {
-            std::cout << ", tu contraseña es correcta";
+            std::cout << "Tu contraseña es correcta\n";
 
         }
         else
         {
-            std::cout << " La contraseña esta incorrecta, intentelo más tarde";
+            std::cout << " La contraseña esta incorrecta\n";
 
         }
 
-        std::cout << " Deseas cambiar alguna de las dos otra vez??\n 1- si\n 0- NO\n";
+        std::cout << " ingrese 1- para volver a intentarlo\n ingrese 0- para salir\n";
         std::cin >> seguir;
     }
-
-
-
-
-
-
-
-
-
-
 
 }
