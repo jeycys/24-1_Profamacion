@@ -1,5 +1,6 @@
 // P004_Entrada y salida_V0.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-
+// by julio
+// se hizo un mini consultorio en el que el paciente tiene que ingresar sus datos
 #include <iostream>
 #include <locale.h>
 #include <string>
