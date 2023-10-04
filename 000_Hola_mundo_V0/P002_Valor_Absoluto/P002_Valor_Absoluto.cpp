@@ -1,5 +1,6 @@
 // P002_Valor_Absoluto.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+// by julio
+// se hizo una "calculadora" a medias, de solo sacar el valor absoluto de un  número
 
 #include <iostream>
 #include <math.h>
