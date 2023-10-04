@@ -1,5 +1,6 @@
 // P003_Mayor que Menor que.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+// by julio
+// se hizo un programa en el que se identifica cual es el mayor y cual es el menor
 
 #include <iostream>
 #include <math.h>
