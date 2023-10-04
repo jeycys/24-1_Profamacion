@@ -14,9 +14,9 @@ int main()
     std::string sino;
     bool adivina = false;
     std::cout << "Hola, soy tu amigo Akinator\n Intentare adivinar el color en el que estes pensando\n";
+    std::cout << "las respuestas seran 0 para no y 1 para si\n";
     std::cout << "Estas listo??\n 0 - No \n 1 - Si\n";
     std::cin >> adivina;
-    std::cout << "las respuestas seran 0 para no y 1 para si\n";
     while (adivina)
     {
         std::cout << "¿Tu color esta relacionado con un arbol?";
@@ -63,47 +63,13 @@ int main()
 
                 }
             }
-            
+
         }
         std::cout << "\n¿Adivine?";
         std::cin >> sino;
-        std::cout << "¿Quieres jugar otra vez?";
+        std::cout << "¿Quieres jugar otra vez?\n";
+        std::cout << "1- SI\n 0-NO\n";
         std::cin >> adivina;
     }
-  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
 }
-
