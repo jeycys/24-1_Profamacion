@@ -10,58 +10,61 @@
 int main()
 {
     setlocale(LC_ALL, "es_MX.UTF-8");
-    int mayor_edad = 7;
+    int mayore;
     //Sintaxys de IF-ELSE
-    if (mayor_edad >= 18)
+    std::cout << "hola brother bienvenido al oxxo, si quieres este cigarro tinenes que decirme cuantos años tienes\n";
+    std::cin >> mayore;
+
+    if (mayore >= 18)
     {
-        std::cout << "Bienvenido al bar de mou \n"
-            << "como eres mayor puedes beber cerveza \n";
+        std::cout << "okay, ten tu cugarrou \n";
     }
     else
     {
-        std::cout << "Sal de aquí pequeñín\n";
+        std::cout << "Sal de aquí pequeñín o llamo a la policia\n";
     }
     //dungeon
     bool llave1, llave2;
-    std::string Cal1 = "Calabozo 1", Cal2 = "Calabozo 2";
-    std::cout << "Bienvenido caballero te encontraste con una araña" <<
-        " Que haces? 1.- Atacas 0.- Huyes\n";
+    std::string Cal1 = "Problema 1", Cal2 = "problema 2";
+    std::cout << "\nTu novia viene hacia ti muy enojada y no sabes porque" <<
+        " Que haces? 1.- la afrontas 0.- Huyes\n";
     std::cin >> llave1;
     if (llave1 == true)
     {
-        std::cout << "Que valiente eres acabas de ingresar al " << Cal1 <<
-            " Te encontraste con un troll que deseas hacer? \n" <<
-            "1.- Atacas 0.- Huyes \n";
+        std::cout << "\nQue valiente o mas bien tonto????" << Cal1 <<
+            " \nTe dice que le llego un chisme de que tuviste algo que ver con su mejor amiga \n" <<
+            "1.- la cortas 0.- le dices que no es cierto y que crea mas en ti que en ella 50/50 \n";
         std::cin >> llave2;
         if (llave2 == true)
         {
-            std::cout << "Derrotaste al troll y encontraste una princesa" <<
-                " Como eres un caballero la llevas a su reyno donde " <<
-                "Te apalean porque piensan que tu la secuestraste XD\n";
+            std::cout << "hay mas peces en el agua brother\n";
         }
         else
         {
-            std::cout << "Culito pero sanito\n";
+            std::cout << "te creyo pero tinenes que estar un mes rogandole para que se le pase el enojo\n";
         }
     }
     else
     {
-        std::cout << "Ni una araña neta? \n";
+        std::cout << "No eres cobarde, sabes que no le puedes ganar en una discucion \n";
     }
     //Sintaxys de SWITCH CASE
     int opc = 0;
-    std::cout << "Que opción deseas realizar? \n1.- Suma\n2.- Resta\n" <<
+    std::cout << "\ntienes tarea de matematicas, ¿que quieres hacer primero? \n1.- Suma\n2.- Resta\n" <<
         "3.- Multiplicación \n";
     std::cin >> opc;
-    int a = 1, b = 1;
+    float a, b;
+    std::cout << "ingresa dos números\n";
+    std::cin >> a;
+    std::cout << "\n";
+    std::cin >> b;
+    std::cout << "\n";
     switch (opc)
     {
     case 1:
         std::cout << "La suma es: " << a + b;
         break;
     case 2:
-        a = 1;
-        b = 1;
         std::cout << "La resta es: " << a - b;
         break;
     case 3:
@@ -71,43 +74,3 @@ int main()
         std::cout << "Esa opción no la conozco\n";
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
