@@ -16,10 +16,12 @@ int main()
     string contra2;
 
 
+        std::cout << "Hola usuario, para crear una nueva cuenta ingrese un usuario y su nueva contraseña, no debe tener espacios\n";
+
     bool seguir = true;
     while (seguir)
     {
-        std::cout << "Hola usuario, para crear una nueva cuenta ingrese un usuario y su nueva contraseña\n";
+        std::cout << "\n--------------------------------------------------------------------------------------------\n";
         std::cout << "Ingrese su nuevo usuario:  ";
         std::cout << "\n";
         std::cin >> usu;
