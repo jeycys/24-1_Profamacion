@@ -24,6 +24,7 @@ int main()
     bool seguir = true;
     while (seguir)
     {
+        std::cout << "Ingrese 2 numeros\n";
         std::cin >> n1;
         std::cout << "\n";
         std::cin >> n2;
@@ -52,8 +53,7 @@ int main()
         {
             std::cout << n2 << " es menor que " << n1;
         }
-    std::cout << "\n¿Quieres hacerlo otra vez con otros numeros?\n 1-si\n 0-no\n";
-    std::cin >> seguir;
-    std::cout << "Perfecto, ingresa nuevamente 2 numeros\n";
+        std::cout << "\n¿Quieres hacerlo otra vez con otros numeros?\n 1-si\n 0-no\n";
+        std::cin >> seguir;
     }
 }
