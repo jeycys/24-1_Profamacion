@@ -7,7 +7,7 @@
 
 int main()
 {
-   
+
 	float n1;
 	float n2;
 
@@ -17,32 +17,22 @@ int main()
 	std::cout << "\n";
 	std::cin >> n2;
 	std::cout << "\n";
-	if (n1 > n2)
+	if (n1 == n2)
 	{
-		std::cout << n1 << " es mayor que " << n2;
-
+		std::cout << "Tus numeros son iguales";
 	}
 	else
 	{
-		std::cout << n2 << " es mayor que " << n1;
+		if (n1 > n2)
+		{
+			std::cout << n1 << " es mayor que " << n2;
+
+		}
+		else
+		{
+			std::cout << n2 << " es mayor que " << n1;
+		}
 	}
-	
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
