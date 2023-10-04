@@ -1,5 +1,6 @@
 // P003_Mayor_que_menor_que_V0.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+// by julio
+// se le pidio al usuario datos para cosas simples
 
 
 #include <iostream>
