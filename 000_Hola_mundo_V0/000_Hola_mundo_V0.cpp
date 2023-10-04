@@ -9,5 +9,5 @@
 int main()
 {
     //sintaxys para hablar con el usuario
-    std::cout << "Hello niggeria\n";
+    std::cout << "Hello  brou\n";
 }
