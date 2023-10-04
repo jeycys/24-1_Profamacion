@@ -1,5 +1,6 @@
 // P007_Decisiones.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+// by julio
+// se hizo una toma de decisiones en la wwe
 
 #include <iostream>
 
