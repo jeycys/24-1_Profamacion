@@ -1,5 +1,6 @@
-
-
+//P008_Bucles_V0
+// by julio
+// se hizo uso del if, else, switch case y el while
 
 #include <iostream>
 #include <locale>
