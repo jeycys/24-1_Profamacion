@@ -45,48 +45,7 @@ int main()
     std::cout << "¿Cuanto mides? ";
     std::cin >> altura;
     std::cout << "\n";
-    std::cout << "Te dare tu indice de masa corporal (IMC):  " << peso / (altura / 100 * altura / 100);
+    std::cout << "Te dare tu indice de masa corporal (IMC):  " << peso / pow(altura,2);
     std::cout << "\n";
     std::cout << "Muchas gracias por su visita, a mi parecer mo tiene nada pero le dare unos medicamentos que hara qeu se sienta           mucho mejor :) ";
-    
-
-
-
-
-
-
-
-    
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
