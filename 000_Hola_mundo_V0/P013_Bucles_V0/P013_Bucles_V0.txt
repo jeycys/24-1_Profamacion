@@ -1,0 +1,13 @@
+﻿'P13_Bucles_V0.exe' (Win32): 'D:\GitHub\24-1_Profamacion\000_Hola_mundo_V0\P13_Bucles_V0\Debug\P13_Bucles_V0.exe' cargado. Símbolos cargados.
+'P13_Bucles_V0.exe' (Win32): 'C:\Windows\SysWOW64\ntdll.dll' cargado. 
+'P13_Bucles_V0.exe' (Win32): 'C:\Windows\SysWOW64\kernel32.dll' cargado. 
+'P13_Bucles_V0.exe' (Win32): 'C:\Windows\SysWOW64\KernelBase.dll' cargado. 
+'P13_Bucles_V0.exe' (Win32): 'C:\Windows\SysWOW64\apphelp.dll' cargado. 
+'P13_Bucles_V0.exe' (Win32): 'C:\Windows\SysWOW64\msvcp140d.dll' cargado. 
+'P13_Bucles_V0.exe' (Win32): 'C:\Windows\SysWOW64\vcruntime140d.dll' cargado. 
+'P13_Bucles_V0.exe' (Win32): 'C:\Windows\SysWOW64\ucrtbased.dll' cargado. 
+El subproceso 0x4f50 terminó con código 0 (0x0).
+El subproceso 0x1f08 terminó con código -1073741510 (0xc000013a).
+El subproceso 0xcd0 terminó con código -1073741510 (0xc000013a).
+El subproceso 0xa60 terminó con código -1073741510 (0xc000013a).
+El programa '[12256] P13_Bucles_V0.exe' terminó con código -1073741510 (0xc000013a).
