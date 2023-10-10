@@ -1,0 +1,43 @@
+// P014_Bucles_V0.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+// by julio
+// Se hizo un bucle de 0 a 1000 por 3 "formas"
+
+#include <iostream>
+#include <windows.h>
+
+int main()
+{
+    bool si = false;
+    int i = 0;
+    int seg = 100, s = 1;
+    int seg1 = 1000, s1 = 1;
+
+    std::cout << "Hola usuario, hoy vamos a contar de 1000 a 0\n";
+    std::cout << "¿Estars listo?\n";
+    std::cin >> si;
+    while (si == true)
+    {
+        do
+        {
+            for (i = 1000; i >= 0; i--)
+            {
+                std::cout << i << std::endl;
+            }
+
+            std::cout << "\nAhora contaremos de 0 a 100 lentamente\n";
+            for (i = 0; i <= 100; i++)
+            {
+                Sleep(seg);
+                std::cout << i << std::endl;
+            }
+
+            std::cout << "Muy bien, ahora contaremos de 10 en 10 hasta 100";
+            for (i = 0; i <= 100; i += 10)
+            {
+                Sleep(seg1);
+                std::cout << i << std::endl;
+            }
+        } while (si);
+    }
+}
+
