@@ -24,16 +24,18 @@ int main()
         std::cout << "\n--------------------------------------------------------------------------------------------\n";
         std::cout << "Ingrese su nuevo usuario:  ";
         std::cout << "\n";
-        std::cin >> usu;
+        getline(std::cin, usu);
         std::cout << "Ahora ingrese su contraseña:  " << contra;
         std::cout << "\n";
-        std::cin >> contra;
+        getline(std::cin, contra);
         std::cout << "Confirme su usario  su contraseña:\n";
-        std::cin >> usu2;
+        getline(std::cin, usu2);
         std::cout << "\n";
-        std::cin >> contra2;
+        getline(std::cin, contra2);
 
+     
 
+        
         if (usu == usu2)
         {
             std::cout << "Tu usuario es correcto\n";
