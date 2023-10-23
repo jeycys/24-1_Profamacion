@@ -201,6 +201,8 @@ int main()
                     std::cout << Beep(400, 300);
                     std::cout << Beep(400, 300);
                     std::cout << pna << " le acierta un buen golpe y lo termina haciendo un knockout";
+                    std::cout << "¿Deseas volver a inciar?";
+                    std::cin >> start;
                 }
                 if (s1 == 2)
                 {
@@ -210,11 +212,15 @@ int main()
                     if (sino1 == 1)
                     {
                         std::cout << "Le diste la paleta a " << pna << " la cual termina siendo el motivo de su muerte\n Resulta que no sabias que no se le puede dar comida humana a los pokemones\n" << pna << " se termino intoxicando y su vida bajo a 0";
+                        std::cout << "¿Deseas volver a inciar?";
+                        std::cin >> start;
                     }
                     else
                     {
                         std::cout << "No decidiste hacer nada y pierdes un turno asi por nomas";
                         std::cout << "El pokémon de " << rival << " termina haciendo otro ataque especial, pero esta vez no falla y por alguna razon te hace insta kill";
+                        std::cout << "¿Deseas volver a inciar?";
+                        std::cin >> start;
                     }
 
                 }
@@ -229,12 +235,15 @@ int main()
                     std::cout << "\n-------------------------\n";
                     std::cout << "\n---      HP: 0       ---\n";
                     std::cout << "\n-------------------------\n";
+                    std::cout << "¿Deseas volver a inciar?";
+                    std::cin >> start;
                 }
                 if (s1 == 4)
                 {
                     std::cout << "Logras escapar pero dejas a " << pna << " atras y " << rival << " se queda con el.\n";
                     std::cout << "Todos en el pueblo te vieron huir despavorido y asustado por \nlo cual se burlaron de ti y por lo cual te genero un trauma hacia los pokemones\n y ya nunca fuiste entrenador pokémon\n";
-
+                    std::cout << "¿Deseas volver a inciar?";
+                    std::cin >> start;
                 }
 
             }
@@ -272,6 +281,8 @@ int main()
                     std::cout << Beep(400, 300);
                     std::cout << Beep(400, 300);
                     std::cout << pna << " le acierta un buen golpe y lo termina haciendo un knockout";
+                    std::cout << "¿Deseas volver a inciar?";
+                    std::cin >> start;
                 }
                 if (p1 == 2)
                 {
@@ -281,11 +292,15 @@ int main()
                     if (sino == 1)
                     {
                         std::cout << "Le diste la paleta a " << pna << " la cual termina siendo el motivo de su muerte\n Resulta que no sabias que no se le puede dar comida humana a los pokemones\n" << pna << " se termino intoxicando y su vida bajo a 0";
+                        std::cout << "¿Deseas volver a inciar?";
+                        std::cin >> start;
                     }
                     else
                     {
                         std::cout << "No decidiste hacer nada y pierdes un turno asi por nomas";
                         std::cout << "El pokémon de " << rival << " termina haciendo otro ataque especial, pero esta vez no falla y por alguna razon te hace insta kill";
+                        std::cout << "¿Deseas volver a inciar?";
+                        std::cin >> start;
                     }
 
                 }
@@ -363,11 +378,15 @@ int main()
                 if (sino2 == 1)
                 {
                     std::cout << "Le diste la paleta a " << pna << " la cual termina siendo el motivo de su muerte\n Resulta que no sabias que no se le puede dar comida humana a los pokemones\n" << pna << " se termino intoxicando y su vida bajo a 0";
+                    std::cout << "¿Deseas volver a inciar?";
+                    std::cin >> start;
                 }
                 else
                 {
                     std::cout << "No decidiste hacer nada y pierdes un turno asi por nomas";
                     std::cout << "El pokémon de " << rival << " termina haciendo otro ataque especial, pero esta vez no falla y por alguna razon te hace insta kill";
+                    std::cout << "¿Deseas volver a inciar?";
+                    std::cin >> start;
                 }
 
             }
@@ -468,7 +487,8 @@ int main()
                 {
                     std::cout << "Logras escapar pero dejas a " << pna << " atras y " << rival << " se queda con el.\n";
                     std::cout << "Todos en el pueblo te vieron huir despavorido y asustado por \nlo cual se burlaron de ti y por lo cual te genero un trauma hacia los pokemones\n y ya nunca fuiste entrenador pokémon\n";
-
+                    std::cout << "¿Deseas volver a inciar?";
+                    std::cin >> start;
                 }
 
 
