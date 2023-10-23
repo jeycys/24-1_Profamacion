@@ -29,55 +29,63 @@ int main()
     std::cin >> start;
     while (start == true)
     {
-        std::cout << name << " elije a tu starter:\n ";
-        std::cout << "1.- CHARMANDER\n";
-        std::cout << "2.- SQUIRTLE\n";
-        std::cout << "3.- BULBASAUR\n";
-        std::cin >> opc;
-        switch (opc)
+        do
         {
-        case 1:
-            if (opc == 1)
+            std::cout << name << " elije a tu starter:\n ";
+            std::cout << "1.- CHARMANDER\n";
+            std::cout << "2.- SQUIRTLE\n";
+            std::cout << "3.- BULBASAUR\n";
+            std::cin >> opc;
+            switch (opc)
             {
+            case 1:
+                if (opc == 1)
+                {
 
-                std::cout << Beep(500, 100);
-                std::cout << "\nHas elejido a Charmander\n";
-                std::cout << "STATS: \n";
-                std::cout << "\n-------------------------\n";
-                std::cout << "\n---      HP: 50       ---\n";
-                std::cout << "\n---       FIRE        ---\n";
-                std::cout << "\n-------------------------\n";
-            }
-            break;
-        case 2:
-            if (opc == 2)
-            {
+                    std::cout << Beep(500, 100);
+                    std::cout << "\nHas elejido a Charmander\n";
+                    std::cout << "STATS: \n";
+                    std::cout << "\n-------------------------\n";
+                    std::cout << "\n---      HP: 50       ---\n";
+                    std::cout << "\n---       FIRE        ---\n";
+                    std::cout << "\n-------------------------\n";
+                }
+                break;
+            case 2:
+                if (opc == 2)
+                {
 
-                std::cout << Beep(500, 100);
-                std::cout << "\nHas elejido a Squirtle\n";
-                std::cout << "STATS: \n";
-                std::cout << "\n-------------------------\n";
-                std::cout << "\n---      HP: 50       ---\n";
-                std::cout << "\n---       WATER       ---\n";
-                std::cout << "\n-------------------------\n";
-            }
-            break;
-        case 3:
-            if (opc == 3)
-            {
+                    std::cout << Beep(500, 100);
+                    std::cout << "\nHas elejido a Squirtle\n";
+                    std::cout << "STATS: \n";
+                    std::cout << "\n-------------------------\n";
+                    std::cout << "\n---      HP: 50       ---\n";
+                    std::cout << "\n---       WATER       ---\n";
+                    std::cout << "\n-------------------------\n";
+                }
+                break;
+            case 3:
+                if (opc == 3)
+                {
 
-                std::cout << Beep(500, 100);
-                std::cout << "\nHas elejido a Bulbasaur\n";
-                std::cout << "STATS: \n";
-                std::cout << "\n-------------------------\n";
-                std::cout << "\n---      HP: 50      ---\n";
-                std::cout << "\n---       PLANT       ---\n";
-                std::cout << "\n-------------------------\n";
+                    std::cout << Beep(500, 100);
+                    std::cout << "\nHas elejido a Bulbasaur\n";
+                    std::cout << "STATS: \n";
+                    std::cout << "\n-------------------------\n";
+                    std::cout << "\n---      HP: 50      ---\n";
+                    std::cout << "\n---       PLANT       ---\n";
+                    std::cout << "\n-------------------------\n";
+                }
+                break;
+            default:
+                std::cout << "No hay mas pokemones\n";
+                std::cout << "Vuelve a elegir, presiona 0 para continuar\n ";
+                std::cout << "O\n";
+                std::cout << "Presiona 1 si quieres iniciar tu historia pokémon con el pokémon ya definido CHARMANDER";
+                std::cout << "\n";
+                std::cin >> start;
             }
-            break;
-        default:
-            std::cout << "No hay mas pokemones\n";
-        }
+        } while (start == false);
         std::string pna;
         std::cout << "Ponle un nombre a tu pokémon: ";
         std::cin >> pna;
@@ -518,4 +526,3 @@ int main()
 
     }
 }
-
