@@ -1,0 +1,295 @@
+// PROYECTO_MATE.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+// by julio 
+
+#include <iostream>
+#include <math.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "ES_MX.UTF-8");
+    int quequeres = 0;
+
+
+    std::cout << "Y asi fue como gane tanto dinero en el casino en mi primera vez en las vegas" << std::endl;
+    std::cout << "¿Que que tanto?" << std::endl;
+    std::cout << "Digamos que no me tengo que preocupar del dinero por el resto de mi vida" << std::endl;
+    std::cout << "¿O fue que lo perdi todo?......\n";
+    std::cout << "\n";
+    std::cout << "\n";
+    std::cout << "Muy bien caballeros ya gane mucho, pero la noche sigue siendo joven\n¿Que jugare?......." << std::endl;
+
+    std::cout << "1 - CRAPS" << std::endl;
+    std::cout << "2 - La ruleta" << std::endl;
+    std::cout << "3 - Black Jack" << std::endl;
+
+    std::cin >> quequeres;
+    std::cout << "\n";
+    std::cout << "\n";
+
+    std::cout << "--------------------------------------------------- " << quequeres << " --------------------------------------------------------------" << std::endl;
+    std::cout << "                                                 A JUGAR!                                                       ";
+    std::cout << "\n";
+
+    if (quequeres == 1)
+    {
+        int jaja = 0;
+        int jaja2 = 0;
+        std::cout << "Muy bien en caso de que no se sepa las reglas muy bien se las explico" << std::endl;
+        std::cout << "Gran 6 y Gran 8:\n Se gana si se saca un 6 o un 8 (antes debes elegir si apuestas al 6 o al 8, solo puedes jugar con uno de ellos), mientras que pierdes si sale un 7.";
+        std::cout << "Por cual numero va a postar?" << std::endl;
+        std::cout << "\n";
+        std::cout << "1- 6 con 14% de probabilidad" << std::endl;
+        std::cout << "2- 8 con la misma probabilidad (o sera menos)" << std::endl;
+        std::cout << "\n";
+        std::cin >> jaja;
+        if (jaja == 1)
+        {
+            std::cout << "Muy bien, empezemos" << std::endl;
+            std::cout << "Hay 4 personas a tu alrededor\n A cuantas le pides que le soplen a los dados?" << std::endl;
+            std::cout << "1 - A ninguna (señal de mala suerte)" << std::endl;
+            std::cout << "2 - A Tod@s (señal de buena suerte)" << std::endl;
+            std::cout << "3 - A solo una" << std::endl;
+            std::cout << "4 - A dos desconocidos " << std::endl;
+            std::cout << "5 - A mis acompañantes (3)" << std::endl;
+            std::cout << "6 - A 4 dejanodo y excluido a un pobre" << std::endl;
+            std::cin >> jaja2;
+            std::cout << "\n";
+            std::cout << "ALLA VAMOS!!!!" << std::endl;
+            std::cout << "\n";
+            int siono = 0;
+
+            siono = rand() % 36;
+            std::cout << "----------------------------------------------------------" << siono << "--------------------------------------------------------" << std::endl;
+            std::cout << "\n";
+            std::cout << "\n";
+            std::cout << "\n";
+            if (siono == 6)
+            {
+                std::cout << "WOW! NO PUEDE SER FELICIDADES DE VERDAD NO ME LO CREO\n Como apostaste demaciado y ser un irresponsable al apostar tanto te llevas 90 MDP a tu casa!!!!!";
+            }
+            else
+            {
+                std::cout << "WOW!!.....\n Bastante real el resultado no crees?\n Ahora po apostar una cantitad realmente grande te quedas en quiebra y vives toda tu vida de vagabundo :)";
+            }
+
+
+        }
+        else
+        {
+            int jaja55;
+            std::cout << "Muy bien, empezemos" << std::endl;
+            std::cout << "Hay 4 personas a tu alrededor\n A cuantas le pides que le soplen a los dados?" << std::endl;
+            std::cout << "1 - A ninguna (señal de mala suerte)" << std::endl;
+            std::cout << "2 - A Tod@s (señal de buena suerte)" << std::endl;
+            std::cout << "3 - A solo una" << std::endl;
+            std::cout << "4 - A dos desconocidos " << std::endl;
+            std::cout << "5 - A mis acompañantes (3)" << std::endl;
+            std::cout << "6 - A 4 dejanodo y excluido a un pobre" << std::endl;
+            std::cin >> jaja55;
+            std::cout << "\n";
+            std::cout << "ALLA VAMOS!!!!" << std::endl;
+            std::cout << "\n";
+            int siono2 = 0;
+
+            siono2 = rand() % 30;
+            std::cout << "----------------------------------------------------------" << siono2 << "--------------------------------------------------------" << std::endl;
+            std::cout << "\n";
+            std::cout << "\n";
+            std::cout << "\n";
+            if (siono2 == 8)
+            {
+                std::cout << "WOW! NO PUEDE SER FELICIDADES DE VERDAD NO ME LO CREO\n Como apostaste demaciado y ser un irresponsable al apostar tanto te llevas 90 MDP a tu casa!!!!!";
+            }
+            else
+            {
+                std::cout << "WOW!!.....\n Bastante real el resultado no crees?\n Ahora po apostar una cantitad realmente grande te quedas en quiebra y vives toda tu vida de vagabundo :)";
+            }
+        }
+
+
+
+    }
+
+    if (quequeres == 2)
+    {
+        int sino = 0;
+        std::cout << "Muy bien en caso de que no se sepa las reglas muy bien se las explico" << std::endl;
+        std::cout << "Estamos haciendo el tipo de apuesta dependiendo de la hora de la noche, ahora se esta jugando por color " << std::endl;
+        std::cout << "¿A que color quiere apostar?" << std::endl;
+        std::cout << "1 - ROJO ROJO TE QUIERO ROJO" << std::endl;
+        std::cout << "2 - NEGRO NEGRO TE QUIERO NEGRO" << std::endl;
+        std::cout << "\n";
+        std::cout << "\n";
+        std::cout << "\n";
+        std::cin >> sino;
+        if (sino == 1)
+        {
+            int  maybe = 0;
+            maybe = rand() % 3;
+            if (maybe == 1)
+            {
+                std::cout << "------------------------------------------------------------------------------------------------------------------------" << std::endl;
+                std::cout << "---------------------------------------------------------- ROJO --------------------------------------------------------" << std::endl;
+                std::cout << "------------------------------------------------------------------------------------------------------------------------" << std::endl;
+                std::cout << "\n";
+                std::cout << "\n";
+                std::cout << "\n";
+                std::cout << "WOW! que suerte, como el indice de apuestas estuvo muy alto por el negro te llevas todo lo que apostaron\n De nuevo, FELICIDADES";             
+            }
+            else
+            {
+                std::cout << "----------------------------------------------------------------------------------------------------------------------" << std::endl;
+                std::cout << "---------------------------------------------------------- NEGRO -----------------------------------------------------" << std::endl;
+                std::cout << "----------------------------------------------------------------------------------------------------------------------" << std::endl;
+                std::cout << "\n";
+                std::cout << "\n";
+                std::cout << "\n";
+                std::cout << "Lastima, como tu fuiste el unico que aposto al rojo y aparte con una cantidad enorme nos quedas debiendo 50 MDP";
+            }
+        }
+        else
+        {
+            int  maybe2 = 0;
+            maybe2 = rand() % 3;
+            if (maybe2 == 1)
+            {
+                std::cout << "------------------------------------------------------------------------------------------------------------------------" << std::endl;
+                std::cout << "---------------------------------------------------------- NEGRO -------------------------------------------------------" << std::endl;
+                std::cout << "------------------------------------------------------------------------------------------------------------------------" << std::endl;
+                std::cout << "\n";
+                std::cout << "\n";
+                std::cout << "\n";
+                std::cout << "WOW! que suerte, como el indice de apuestas estuvo muy alto por el negro te llevas todo lo que apostaron\n De nuevo, FELICIDADES";
+            }
+            else
+            {
+                std::cout << "----------------------------------------------------------------------------------------------------------------------" << std::endl;
+                std::cout << "---------------------------------------------------------- ROJO ------------------------------------------------------" << std::endl;
+                std::cout << "----------------------------------------------------------------------------------------------------------------------" << std::endl;
+                std::cout << "\n";
+                std::cout << "\n";
+                std::cout << "\n";
+                std::cout << "Lastima, como tu fuiste el unico que aposto al rojo y aparte con una cantidad enorme nos quedas debiendo 50 MDP";
+            }
+
+        }
+    }
+
+    if (quequeres == 3)
+    {
+        int referee = 1;
+        referee = rand() % 21;
+        std::cout << "Bien, repasaremos las reglas" << std::endl;
+        std::cout << "se juega en base a un sistema de puntos que hace corresponder cada carta de la baraja con un valor numérico determinado 21 \n es el mejor valor numérico posible que puede obtenerse. pero en esta ocación ya estamos por cerrar, asi que este sera el ultimo juego\n Asi que piensa muy bien tus elecciones " << std::endl;
+        std::cout << "OKEY AAAAAPPOSHTAHRE TOOOOOOODOOO" << std::endl;
+        std::cout << "Okay, empezemos";
+        std::cout << "\n";
+        std::cout << "\n";
+        std::cout << "Se te entregan dos cartas:" << std::endl;
+        int  cart1 = 1;
+        cart1 = rand() % 11;
+        std::cout << "Primera carta:  " << cart1 << std::endl;
+        int  cart2 = 1;
+        cart2 = rand() % 11;
+        std::cout << "segunda carta:  " << cart2 << std::endl;
+        if (cart1 + cart2 == 22)
+        {
+            std::cout << "Al parecer perdio señor, lo siento se tendra que ir sin nada y ahora porque ya estamos cerrando";
+
+        }
+        else
+        {
+            int po = 0;
+            int cartt = cart1 + cart2;
+            std::cout << "Tu mazo de ahora es: " << cartt << std::endl;
+            std::cout << "¿Deseas pedir o te plantas?" << std::endl;
+            std::cout << "1 - Me planto" << std::endl;
+            std::cout << "2- Tocar dos veces la mesa" << std::endl;
+            std::cin >> po;
+            if (po == 1)
+            {
+                std::cout << "Muy bien" << std::endl;
+                if (referee >= cartt)
+                {
+                    std::cout << "El mazo de la casa es: " << referee << std::endl;
+                    std::cout << "Has perdido todo tu dinero, gracias por participar :)";
+                }
+            }
+            if (po == 2)
+            {
+                int  cart3 = 1;
+                cart3 = rand() % 10 + 1;
+                std::cout << "Tu carta es: " << cart3 << std::endl;
+                int cartt1 = cartt + cart3;
+                std::cout << "Tu mazo es de: " << cartt1 << std::endl;
+                std::cout << "Muy bien" << std::endl;
+                int aja = 0;
+                std::cout << "¿Seguimos?" << std::endl;
+                std::cout << "1- Me planto" << std::endl;
+                std::cout << "2- Dame otra mostro" << std::endl;
+                std::cin >> aja;
+                if (aja == 1)
+                {
+                    if (referee >= cartt1)
+                    {
+                        std::cout << "El mazo de la casa es: " << referee << std::endl;
+                        std::cout << "Has perdido todo tu dinero, gracias por participar y tu dinero :)";
+                    }
+                    if (cartt1 > 21)
+                    {
+                        std::cout << "Has perdido todo tu dinero, gracias por participar y tu dinero :)";
+                    }
+                }
+                else
+                {
+                    if (cartt1 > 21)
+                    {
+                        std::cout << "Has perdido todo tu dinero, gracias por participar y tu dinero :)";
+                    }
+
+                    int pe2 = 0;
+                    std::cout << "No lo escuche muy bien, ¿seguimos jugando?" << std::endl;
+                    std::cout << "1 - Me planto" << std::endl;
+                    std::cout << "2- Tocar dos veces la mesa" << std::endl;
+                    std::cin >> pe2;
+                    if (pe2 == 2)
+                    {
+                        int  cart4 = 1;
+                        cart4 = rand() % 9 + 1;
+                        std::cout << "Tu carta es: " << cart4 << std::endl;
+                        int cartt2 = cartt1 + cart4;
+                        std::cout << "Tu mazo es de: " << cartt2 << std::endl;
+                        if (referee >= cartt2)
+                        {
+                            std::cout << "El mazo de la casa es: " << referee << std::endl;
+                            std::cout << "Has perdido todo tu dinero, gracias por participar y por el dinero :)";
+                        }
+                        if (cartt2 > 21)
+                        {
+                            std::cout << "Has perdido todo tu dinero, gracias por participar y tu dinero :)";
+                        }
+
+                    }
+                    else
+                    {
+                        if (referee >= cartt1)
+                        {
+                            std::cout << "El mazo de la casa es: " << referee << std::endl;
+                            std::cout << "Has perdido todo tu dinero, gracias por participar y por el dinero :)";
+                        }
+                      
+                    }
+                }
+            }
+            
+        }
+    }
+
+
+
+
+
+
+}
+
