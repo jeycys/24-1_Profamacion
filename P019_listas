@@ -1,0 +1,46 @@
+// P019_Listas.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+// by julio
+
+#include <iostream>
+
+class nodo
+{
+public:
+    int altura;
+    nodo* nxt;
+};
+
+
+
+
+int main()
+{
+    nodo* cabeza = NULL;
+    nodo* torso = NULL;
+    nodo* pies = NULL;
+
+    cabeza = new nodo();
+    torso = new  nodo();
+    pies = new nodo();
+
+    cabeza->altura = 20;
+    cabeza->nxt = torso;
+
+    torso->altura = 45;
+    torso->nxt = pies;
+
+    pies->altura = 100;
+    pies->nxt = NULL;
+    std::cout << "La altura de tony en centimetros es: " << cabeza->altura + torso->altura + pies->altura;
+    std::cout << "\n";
+    while (cabeza != NULL)
+    {
+        std::cout << "Altura especificada: " << cabeza->altura << std::endl;
+        cabeza = cabeza->nxt;
+    }
+
+
+
+
+
+}
