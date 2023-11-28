@@ -68,14 +68,16 @@ int main()
 		int res4;
 		std::cout << "Tu respuesta: "; std::cin >> res4;
 		std::cout << "\n";
+		std::cout << "Suma todas tus respuestas";
+		int ress = res1 + res2 + res3 + res4;
+		std::cin >> ress;
 		std::cout << "Muy bien, ya terminaste el examen y como quieres saber tu calificaicon en corto le preguntas a la miss" << std::endl;
 		std::cout << "La miss accede a que te califique rapido y empieza a calificar" << std::endl;
-		int ress = res1 + res2 + res3 + res4;
 		if (ress == 308)
 		{
 			std::cout << "FELICIDADES!!  la maestra te felicita por sacar 100 en su examen y pasas la materia con un 60 en toda la materia, si nesecitabas ese 100";
 		}
-		else 
+		else
 		{
 			std::cout << "La maestra te mira entristecida y te dice que aprobaste el examen, pero no sacaste el 100 que nesecitabas para aprobar toda la materia lo cual nesecitas recursar la materia ";
 		}
@@ -86,9 +88,8 @@ int main()
 	if (inicio == 1)
 	{
 		std::cout << "Como te quedaste dormido no fuiste al colegio y ese dia habia el examen final de matematicas el cual era el mas importante\n Y por lo tanto te pusieron 0 y nesecitabas pasar ese examen para terminar el año y la materia, pero reprobaste por lo cual no vas a terminar el año y tienes que recurasar toda la materia completa :)";
-	std::cout << "Repetir?" << std::endl;
-	std::cout << "2 - Si\n 1- NO" << std::endl;
-	std::cin >> inicio;
+		std::cout << "Repetir?" << std::endl;
+		std::cout << "2 - Si\n 1- NO" << std::endl;
+		std::cin >> inicio;
 	}
 }
-		
