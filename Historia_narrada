@@ -1,0 +1,94 @@
+// PROYECTO_HISTORIA NARRADA.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+// by julio 
+
+#include <iostream>
+#include <math.h>
+#include <string>
+
+int main()
+{
+	std::cout << "Hola usuario, hoy pasaras un dia normal en la escuela";
+	std::cout << "\n";
+	std::cout << "Escuchas una alarma muy fuerte..." << std::endl;
+	std::cout << "Te levantas a agarrar tu celular cual es de donde viene la alrma" << std::endl;
+	std::cout << "Decides apagarla e irte a dormir o la apagas para levanatrte y empezar tu dia??" << std::endl;
+	std::cout << "1.- Apagarla e irse a dormir" << std::endl;
+	std::cout << "2.- Apagarla e iniciar tu dia" << std::endl;
+	int inicio;
+	std::cin >> inicio;
+	while (inicio == 2)
+	{
+		std::cout << "Ya estas levantad@ y ready para iniciar tu dia" << std::endl;
+		std::cout << "Decide tu ofni:\n 1- Tu outfit favorito\n 2- Un conjunto comodo\n 3- Ropa normal\n 4- Al azar" << std::endl;
+		int sabe;
+		std::cin >> sabe;
+		std::cout << "Ya cambiado y listo que te vas a llevar te tomar??" << std::endl;
+		std::cout << "1- Cafe\n 2- Te\n 3- Yogurt" << std::endl;
+		int sabe2;
+		std::cin >> sabe2;
+		std::cout << "Ya ready siguiendo un poco dormido decides manejar tu o que te lleven?" << std::endl;
+		std::cout << "1- Que te lleven\n 2- Te llevas el carro" << std::endl;
+		int sabe3;
+		std::cin >> sabe3;
+		if (sabe3 == 2)
+		{
+			std::cout << "Te decides llevar el carro y por el camino si se te queda el sueño pero se te pasa escuchando musica" << std::endl;
+		}
+		else
+		{
+			std::cout << "Decides que te lleven y te entra el sueño en el camino y te duermes" << std::endl;
+		}
+		std::cout << "Al llegar a la uni te das cuenta que todos andan repasando para algo\n Le preguntas a un compañero lo que esta pasando y te recuerda que hoy es el examen final de mate" << std::endl;
+		std::cout << "te nervioseas y llega la maestra justo despues de que te avisaran y tu ni pluma trajiste" << std::endl;
+		std::cout << "Luego luego te entregan el examen y queda arreglarselas (Nesecitas un 100 en este examen para pasar la materia)" << std::endl;
+		std::string nombre;
+		std::string apellido;
+		std::string nombreApellido = "";
+		std::cout << "Lo primero es poner tu nombre sobre le examen (de lo unico que te acuerdas)";
+		std::cout << "\nNombre (sin espacios): "; std::cin >> nombre;
+
+		std::cout << "Apellido (sin espacios): "; std::cin >> apellido;
+		std::cout << "Lees la primera pregunta\n 1- 85 + 85 + 100 - 30 " << std::endl;
+		int res;
+		std::cout << "Tu respuesta (no era de opcion multiple): "; std::cin >> res;
+		std::cout << "\n";
+		std::cout << "2- 50 + 50 - 100" << std::endl;
+		int res1;
+		std::cout << "Tu respuesta: "; std::cin >> res1;
+		std::cout << "\n";
+		std::cout << "3- 10 - 10 X 2" << std::endl;
+		int res2;
+		std::cout << "Tu respuesta: "; std::cin >> res2;
+		std::cout << "\n";
+		std::cout << "4- 7 X 7" << std::endl;
+		int res3;
+		std::cout << "Tu respuesta: ";  std::cin >> res3;
+		std::cout << "\n";
+		std::cout << "5- 3 elevado a la 2" << std::endl;
+		int res4;
+		std::cout << "Tu respuesta: "; std::cin >> res4;
+		std::cout << "\n";
+		std::cout << "Muy bien, ya terminaste el examen y como quieres saber tu calificaicon en corto le preguntas a la miss" << std::endl;
+		std::cout << "La miss accede a que te califique rapido y empieza a calificar" << std::endl;
+		int ress = res1 + res2 + res3 + res4;
+		if (ress == 308)
+		{
+			std::cout << "FELICIDADES!!  la maestra te felicita por sacar 100 en su examen y pasas la materia con un 60 en toda la materia, si nesecitabas ese 100";
+		}
+		else 
+		{
+			std::cout << "La maestra te mira entristecida y te dice que aprobaste el examen, pero no sacaste el 100 que nesecitabas para aprobar toda la materia lo cual nesecitas recursar la materia ";
+		}
+		std::cout << "Repetir?" << std::endl;
+		std::cout << "2 - Si\n 1- NO" << std::endl;
+		std::cin >> inicio;
+	}
+	if (inicio == 1)
+	{
+		std::cout << "Como te quedaste dormido no fuiste al colegio y ese dia habia el examen final de matematicas el cual era el mas importante\n Y por lo tanto te pusieron 0 y nesecitabas pasar ese examen para terminar el año y la materia, pero reprobaste por lo cual no vas a terminar el año y tienes que recurasar toda la materia completa :)";
+	std::cout << "Repetir?" << std::endl;
+	std::cout << "2 - Si\n 1- NO" << std::endl;
+	std::cin >> inicio;
+	}
+}
+		
